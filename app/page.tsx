@@ -72,7 +72,7 @@ export default function HomePage() {
               <Code2 className="h-8 w-8 text-primary" />
               <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full" />
             </motion.div>
-            <span className="text-xl font-bold gradient-text">DevFolio</span>
+            <span className="text-xl font-bold gradient-text">DevFolioPro</span>
           </Link>
           <div className="flex items-center gap-3">
             <Link href="/login">

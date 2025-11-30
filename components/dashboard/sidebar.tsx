@@ -40,7 +40,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
               <Code2 className="h-8 w-8 text-primary" />
               <div className=" inset-0 bg-primary/20 blur-lg rounded-full" />
             </motion.div>
-            <span className="text-xl font-bold gradient-text">DevFolio</span>
+            <span className="text-xl font-bold gradient-text">DevFolioPro</span>
       </div>
 
       <nav className="flex-1 space-y-1 p-4">

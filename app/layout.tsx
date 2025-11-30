@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://devconnect.com'),
+  metadataBase: new URL('https://devfoliopro.vercel.app/'),
   title: {
-    default: '🚀 DevConnect - Premium Portfolio & Blog Builder for Developers | Showcase Your Skills',
-    template: '%s | DevConnect - Developer Portfolio Platform'
+    default: '🚀 devfoliopro - Premium Portfolio & Blog Builder for Developers | Showcase Your Skills',
+    template: '%s | devfoliopro - Developer Portfolio Platform'
   },
   description:
     '✨ Create stunning developer portfolios & blogs in minutes! 🎨 8+ premium templates, free hosting, SEO-optimized. Perfect for developers, designers & freelancers. Build your personal brand today! 💼',
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     'portfolio hosting',
     'SEO portfolio',
   ],
-  authors: [{ name: 'DevConnect Team' }],
-  creator: 'DevConnect',
-  publisher: 'DevConnect',
+  authors: [{ name: 'Muhammad Hasan Baig' }],
+  creator: 'Muhammad Hasan Baig',
+  publisher: 'Muhammad Hasan Baig',
   formatDetection: {
     email: false,
     address: false,
@@ -57,25 +57,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://devconnect.com',
-    siteName: 'DevConnect - Developer Portfolio Platform',
-    title: '🚀 DevConnect - Build Your Developer Portfolio in Minutes',
+    url: 'https://devfoliopro.vercel.app/',
+    siteName: 'Devfoliopro - Developer Portfolio Platform',
+    title: '🚀 Devfoliopro - Build Your Developer Portfolio in Minutes',
     description: '✨ Create stunning portfolios & blogs with 8+ premium templates. Free hosting, SEO-optimized, perfect for developers & designers! 🎨',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'DevConnect - Premium Portfolio Builder for Developers',
+        alt: 'Devfoliopro - Premium Portfolio Builder for Developers',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '🚀 DevConnect - Premium Developer Portfolio Builder',
+    title: '🚀 devfoliopro - Premium Developer Portfolio Builder',
     description: '✨ Create stunning portfolios in minutes! 8+ templates, free hosting, SEO-optimized 🎨',
     images: ['/og-image.png'],
-    creator: '@devconnect',
+    creator: '@devfoliopro',
   },
   robots: {
     index: true,
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     // bing: 'your-bing-verification-code',
   },
   alternates: {
-    canonical: 'https://devconnect.com',
+    canonical: 'https://devfoliopro.vercel.app',
   },
   category: 'technology',
 }
