@@ -89,9 +89,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  // verification: {
-  //   google: 'your-google-verification-code',
-  // },
+  verification: {
+    google: 'RaXxN5w9spYNjRhz0jwtBh1KUQHRVKCRQc',
+  },
   alternates: {
     canonical: 'https://devfoliopro.vercel.app',
   },
