@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Code2, Palette, FileText, Sparkles, Zap, Globe, Shield, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
+import { generateWebsiteSchema, generateOrganizationSchema, generateWebApplicationSchema } from "@/lib/schema"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -38,7 +39,22 @@ const floatVariants = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background overflow-hidden">
+    <>
+      {/* Schema Markup for Rich Snippets */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebsiteSchema()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganizationSchema()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebApplicationSchema()) }}
+      />
+      
+      <div className="min-h-screen bg-background overflow-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 -z-10 aurora-bg" />
       <div className="fixed inset-0 -z-10">
@@ -482,5 +498,6 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
+    </>
   )
 }
