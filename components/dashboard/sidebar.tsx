@@ -4,11 +4,12 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, User, FolderKanban, FileText, Palette, LogOut, ExternalLink, Menu, X } from "lucide-react"
+import { LayoutDashboard, User, FolderKanban, FileText, Palette, LogOut, ExternalLink, Menu, X, Code2 } from "lucide-react"
 import { useAuthContext } from "@/components/providers/auth-provider"
 import { useUser } from "@/hooks/use-user"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { motion } from "framer-motion"
 
 const navItems = [
   { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
@@ -34,8 +35,12 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="border-b border-border p-6">
-        <h1 className="text-xl font-bold">Portfolio Builder</h1>
+      <div className="border-b border-border p-6 flex items-center gap-2">
+        <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }} className="relative">
+              <Code2 className="h-8 w-8 text-primary" />
+              <div className=" inset-0 bg-primary/20 blur-lg rounded-full" />
+            </motion.div>
+            <span className="text-xl font-bold gradient-text">DevFolio</span>
       </div>
 
       <nav className="flex-1 space-y-1 p-4">
